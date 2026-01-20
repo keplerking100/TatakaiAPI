@@ -4,7 +4,7 @@ Reliable ports of legacy anime scrapers for broad content coverage.
 
 ## 1. GogoAnime
 
-Search GogoAnime (gogoanime3.co) for anime.
+Search GogoAnime (gogoanime3.co) for anime. (Not Working)
 
 - **URL**: `/anime/gogoanime/:query`
 - **Method**: `GET`
@@ -18,7 +18,7 @@ curl -X GET "http://localhost:4000/api/v1/anime/gogoanime/naruto"
 
 ## 2. Chia-Anime
 
-Search Chia-Anime (chia-anime.su).
+Search Chia-Anime (chia-anime.su).(Not Working)
 
 - **URL**: `/anime/chia-anime/:query`
 - **Method**: `GET`
@@ -32,7 +32,7 @@ curl -X GET "http://localhost:4000/api/v1/anime/chia-anime/bleach"
 
 ## 3. Anime-Freak
 
-Search Anime-Freak (animefreak.video).
+Search Anime-Freak (animefreak.video).(Not Working)
 
 - **URL**: `/anime/anime-freak/:query`
 - **Method**: `GET`

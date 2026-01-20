@@ -4,7 +4,7 @@ Various utility endpoints ported from `anime-api` for quotes, facts, and image r
 
 ## 1. Random Quotes
 
-Get random quotes or quotes by specific anime.
+Get random quotes or quotes by specific anime. (Not Working)
 
 - **URL**: `/anime-api/quotes/random`
 - **Method**: `GET`
